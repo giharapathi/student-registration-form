@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<form name="form" id="form_id" onsubmit="return validation_form()">
+<div class="main-wrap alignments">
+    <div class="form-wrap alignments">
+        <div class="form-inner-first alignments">
+            <h1>Student Registration Form</h1>
+        </div>
+        <div class="form-inner-second alignments">
+            <fieldset class="personal-details-wrap alignments">
+                <legend style="color: rgb(209, 216, 224)">&nbsp;&nbsp;&nbsp;Personal Details&nbsp;&nbsp;&nbsp; </legend>
+                <table>
+                    <tr>
+                        <td><p>First Name:</p> <input type="text" name="F_Name"  maxlength="30" placeholder="First Name" class="Name"><br><span id="f_name_span"></span></td>
+                        <td><p>Middle Name:</p> <input type="text" name="M_Name" maxlength="30" placeholder="Middle Name" class="Name"><br><span id="m_name_span"></span></td>
+                        <td><p>Last Name:</p> <input type="text" name="L_Name"  maxlength="30" placeholder="Last Name" class="Name"><br><span id="l_name_span"></span></td>
+                    </tr>
+                    <tr>
+                        <td><p>Date Of Birth</p>
+                            <input type="date" name="dob" id="DOB">
+                            <br><span id="Birthday_span"></span>
+                        </td>
+                        <td>
+                            <p>Age</p>
+                            <input type="text" name="age" id='Age' placeholder="Age" maxlength="2" style="width: 50px; height: 25px">
+                        </td>
+                        <td><p>Gender</p>
+                            <p>
+                                <input type="radio" name="gender"> Male &nbsp;&nbsp;
+                                <input type="radio" name="gender"> Female &nbsp;&nbsp;
+                                <input type="radio" name="gender"> Other
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>E-mail Address</p>
+                            <input type="email" name="email" placeholder="E-mail" style="width: 350px; height: 25px">
+                            <br><span id="email_span"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>Address</p>
+                            <input type="text" name="address" placeholder="Home Address" style="width: 450px; height: 25px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Contact Number</p>
+                            <input type="text" name="tel_home" placeholder="Home" maxlength="10" style="width: 250px; height: 25px" >
+                            <br><span id="tel_home_span"></span>
+                        </td>
+                        <td>
+                            <p>Mobile Number 01</p>
+                            <input type="text" name="tel_mobile1"placeholder="Mobile 01" maxlength="10" style="width: 250px; height: 25px" >
+                            <br><span id="tel_mobile1_span"></span>
+                        </td>
+                        <td>
+                            <p>Mobile Number 02</p>
+                            <input type="text" name="tel_mobile2"placeholder="Mobile 02" maxlength="10" style="width: 250px; height: 25px" >
+                            <br><span id="tel_mobile2_span"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Educational Qualifications</p>
+                        </td>
+                        <td colspan="2">
+                            <p><input type="checkbox"> Ordinary Level (O/L)</p>
+                            <p><input type="checkbox"> Advance Level (A/L)</p>
+                            <p><input type="checkbox"> Graduation (Bachelors)</p>
+                            <p><input type="checkbox"> Post Graduation (Masters)</p>
+                            <p><input type="checkbox"> PHD </p>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset class="login-details-wrap alignments">
+                <legend style="color: rgb(209, 216, 224)">&nbsp;&nbsp;&nbsp;Login Details&nbsp;&nbsp;&nbsp; </legend>
+                <table>
+                    <tr>
+                        <td>
+                            <p>User Name</p>
+                            <input type="text" name="userName" maxlength="10" placeholder="User Name" style="width: 300px; height: 25px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Password</p>
+                            <input type="password" name="password" placeholder="Password" style="width: 300px; height: 25px"><br>
+                            <span id ='password_span'></span>
+                        </td>
+                        <td>
+                            <p>Confirm Password</p>
+                            <input type="password" name="Confirm_Password" placeholder="Confirm Password" style="width: 300px; height: 25px">
+                            <span id ='con_password_span'></span>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset class="termsAndConditions alignments" >
+                <legend style="color: rgb(209, 216, 224)">&nbsp;&nbsp;&nbsp;Terms & Conditions&nbsp;&nbsp;&nbsp; </legend>
+                <p> <!-- As terms and conditions I have just added a sample text -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisi metus, venenatis at ligula at,
+                    viverra viverra nunc. Pellentesque ullamcorper non odio luctus varius. Mauris a tincidunt dolor. Ut
+                    interdum rhoncus lacus, a porta erat varius ut. In risus lacus, faucibus vel massa eu, elementum
+                    consequat magna. Etiam ullamcorper lacinia dolor in ultrices. Quisque quis velit vulputate,
+                    vestibulum risus at, eleifend diam. Sed et quam suscipit, fringilla lorem nec, lobortis nibh. Sed
+                    efficitur molestie viverra. Integer in malesuada mi, et faucibus mi. Ut mauris lacus, congue quis
+                    mattis sit amet, feugiat sit amet purus.
+                </p>
+                <p class="TandD"><input type="checkbox" id="checkbox">&nbsp;I agree to follow above terms and conditions  <span id="span_checkbox"></span></p>
+
+            </fieldset>
+            <div class="submit-reset">
+                <input type="submit" name="submit" value="Register">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" name="delete" value="Cancel">
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

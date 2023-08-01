@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+.alignments{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-wrap{
+    width: 100%;
+    height: 1400px;
+    background-image: url("../asserts/44.webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.form-wrap{
+    width: 80%;
+    height: 90%;
+    border-radius: 5%;
+    background-color:rgba(30, 39, 46,0.8);
+    flex-direction: column;
+}
+.form-inner-first{
+    padding: 20px;
+    width: 80%;
+    height: 3%;
+}
+.form-inner-first h1{
+    color: rgb(209, 216, 224);
+    font-size: 40px;
+}
+.form-inner-second{
+    width: 95%;
+    height: 90%;
+    margin-top: 0;
+    margin-bottom: 3%;
+    flex-direction: column;
+}
+.personal-details-wrap{
+    width: 90%;
+    height: 60%;
+    border: 1px solid rgb(209, 216, 224) ;
+}
+.login-details-wrap{
+    width: 90%;
+    height: 20%;
+    border: 1px solid rgb(209, 216, 224) ;
+    margin-top: 5%;
+}
+.termsAndConditions{
+    width: 90%;
+    height: 20%;
+    border: 1px solid rgb(209, 216, 224) ;
+    margin-top: 5%;
+}
+.termsAndConditions p{
+    margin: 10px 30px;
+}
+p{
+    color: rgb(209, 216, 224); ;
+}
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px
+}
+.Name{
+    height: 25px;
+    width: 250px;
+}
+.TandD{
+    text-align: left;
+    margin-top: 0;
+
+}
+.submit-reset{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit-reset input{
+    height: 35px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+span{
+    color: red;
+    font-size: 14px;
+}
+
+.EndPage_main_wrap{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../asserts/44.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.EndPage_main_inner{
+    width: 40%;
+    height: 30%;
+    border-radius: 5%;
+    background-color:rgba(30, 39, 46,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EndPage_main_inner h1{
+    color: rgb(209, 216, 224);
+    font-size: 35px;
+}
